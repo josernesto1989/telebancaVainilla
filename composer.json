@@ -1,0 +1,14 @@
+{
+    "name": "ernesto/telebanca-vainilla",
+    "type": "project",
+    "require": {
+        "twbs/bootstrap": "^5.1"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jose Ernesto Carreno Bueno",
+            "email": "josernesto1989@gmail.com"
+        }
+    ]
+}

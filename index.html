@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"   href="vendor/twbs/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    
+    
+    <title>Document</title>
+</head>
+<body>
+      <ul class="nav nav-tabs nav-pills " id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="BANDEC-tab" data-toggle="tab" href="#BANDEC" role="tab" aria-controls="BANDEC" aria-selected="true">BANDEC</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="BPA-tab" data-toggle="tab" href="#BPA" role="tab" aria-controls="BPA" aria-selected="false">BPA</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" id="messages-tab" data-toggle="tab" href="#messages" role="tab" aria-controls="messages" aria-selected="false">Messages</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="settings-tab" data-toggle="tab" href="#settings" role="tab" aria-controls="settings" aria-selected="false">Settings</a>
+        </li> -->
+      </ul>
+
+      <!-- Tab panes -->
+<div class="tab-content">
+    <div class="tab-pane active" id="BANDEC" role="tabpanel" aria-labelledby="BANDEC-tab"></div>
+    <div class="tab-pane" id="BPA" role="tabpanel" aria-labelledby="BPA-tab"></div>
+    <!-- <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">3</div>
+    <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab">.4</div> -->
+  </div>
+    <script src="vendor/twbs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        document.querySelectorAll('a[data-toggle="tab"]').forEach(function(tab){
+            tab.addEventListener('click', function(){
+                document.querySelectorAll('a[data-toggle="tab"]').forEach(function(tab){
+                    tab.classList.remove('active');
+                });
+                this.classList.add('active');
+                document.querySelectorAll('.tab-pane').forEach(function(tab){
+                    tab.classList.remove('active');
+                });
+                document.querySelector('#' + this.getAttribute('aria-controls')).classList.add('active');
+                
+            });
+        });        
+    </script>
+    <script src="js/info.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
