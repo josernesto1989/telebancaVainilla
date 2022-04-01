@@ -18,9 +18,7 @@ populateDiv(bpaOperations, bpaContainer);
 
 function populateDiv(operations, container){
   operations.forEach(operation => {
-
-
-    
+ 
 
     let div = document.createElement("div");
     div.className = "operation";

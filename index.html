@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="css/main.css">
     
     
-    <title>Document</title>
+    <title>TeleBanca</title>
 </head>
 <body>
-      <ul class="nav nav-tabs nav-pills " id="myTab" role="tablist">
+  <nav class="nav nav-default nav-fixed-top " >
+      <ul class="nav nav-tabs nav-pills fixed-top" id="myTab" role="tablist" style="background-color: #212529!important;">
         <li class="nav-item">
           <a class="nav-link active" id="BANDEC-tab" data-toggle="tab" href="#BANDEC" role="tab" aria-controls="BANDEC" aria-selected="true">BANDEC</a>
         </li>
@@ -20,18 +21,28 @@
         </li>
         <!-- <li class="nav-item">
           <a class="nav-link" id="messages-tab" data-toggle="tab" href="#messages" role="tab" aria-controls="messages" aria-selected="false">Messages</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="settings-tab" data-toggle="tab" href="#settings" role="tab" aria-controls="settings" aria-selected="false">Settings</a>
         </li> -->
+        <li class="nav-item">
+          <a class="nav-link" id="settings-tab" data-toggle="tab" href="#settings" role="tab" aria-controls="settings" aria-selected="false">Admin Tarjetas</a>
+        </li>
       </ul>
+    </nav>
 
       <!-- Tab panes -->
-<div class="tab-content">
+<div class="tab-content" style="margin-top: 50px;">
+
     <div class="tab-pane active" id="BANDEC" role="tabpanel" aria-labelledby="BANDEC-tab"></div>
+
     <div class="tab-pane" id="BPA" role="tabpanel" aria-labelledby="BPA-tab"></div>
-    <!-- <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">3</div>
-    <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab">.4</div> -->
+    <!-- <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">3</div> -->
+
+    <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab">
+      <div class="form">
+        <label for="tarjeta">Tarjeta a registrar</label>
+        <input type="number" max=9999999999999999 class="form-control" id="tarjeta" placeholder="XXXX-XXXX-XXXX-XXXX">
+        <a href="#" class="btn btn-lg btn-primary">REGISTRAR</a>
+      </div>
+    </div>
   </div>
     <script src="vendor/twbs/bootstrap/dist/js/bootstrap.min.js"></script>
     <script>
