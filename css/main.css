@@ -2,6 +2,7 @@
     background-color: #f5f5f5;
     padding: 10px;
     margin: 10px;
+    margin-top: 20px;
     border-radius: 5px;
     box-shadow: 0px 0px 5px #ccc;
     
@@ -15,4 +16,10 @@ a{
 .nav-link{
     text-decoration: none;
     color: #f5f5f5;
+}
+.bandec-background{
+    background: linear-gradient(#8c0918, #8c0918b3);
+}
+.bpa-background{
+    background: linear-gradient(#327B74, #327B74b3);
 }

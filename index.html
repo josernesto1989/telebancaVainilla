@@ -25,24 +25,32 @@
         <li class="nav-item">
           <a class="nav-link" id="settings-tab" data-toggle="tab" href="#settings" role="tab" aria-controls="settings" aria-selected="false">Admin Tarjetas</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" id="about-tab" data-toggle="tab" href="#about" role="tab" aria-controls="about" aria-selected="false">Acerca de</a>
+        </li>
       </ul>
     </nav>
 
       <!-- Tab panes -->
-<div class="tab-content" style="margin-top: 50px;">
+<div class="tab-content" style="margin-top: 40px;">
 
-    <div class="tab-pane active" id="BANDEC" role="tabpanel" aria-labelledby="BANDEC-tab"></div>
+    <div class="tab-pane active bandec-background" id="BANDEC" role="tabpanel" aria-labelledby="BANDEC-tab"></div>
 
-    <div class="tab-pane" id="BPA" role="tabpanel" aria-labelledby="BPA-tab"></div>
+    <div class="tab-pane bpa-background" id="BPA" role="tabpanel" aria-labelledby="BPA-tab"></div>
     <!-- <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">3</div> -->
 
     <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab">
       <div class="form">
         <label for="tarjeta">Tarjeta a registrar</label>
         <input type="number" max=9999999999999999 class="form-control" id="tarjeta" placeholder="XXXX-XXXX-XXXX-XXXX">
-        <a href="#" class="btn btn-lg btn-primary">REGISTRAR</a>
+        <a id="register-card-btn" href="#" class="btn btn-lg btn-primary">REGISTRAR</a>
       </div>
     </div>
+
+    <div class="tab-pane about-background" id="about" role="tabpanel" aria-labelledby="about">
+        asdsa
+    </div>
+
   </div>
     <script src="vendor/twbs/bootstrap/dist/js/bootstrap.min.js"></script>
     <script>
